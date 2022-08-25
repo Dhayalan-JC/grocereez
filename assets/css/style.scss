@@ -1,0 +1,165 @@
+/* 
+    Theme: Custom CSS from Scratch
+    Atuhor: StayNcloud
+*/
+
+$them_color: #005e72;
+$logo_color: #c28c00;
+$green: #488f00;
+$grey: #607d8b;
+body {
+    background: rgb(239, 239, 239);
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: max-content;
+    margin: 0 auto;
+    padding: 1rem;
+    .logo {
+        img {
+            width: 10vw;
+        }
+    }
+    .navbar {
+        .navbar-collapse {
+            ul.navbar-nav {
+                li.nav-item {
+                    padding: 0 2rem;
+                    a {
+                        font-size: 2.6rem;
+                        color: $them_color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.top-section {
+    background: url("../images/bg.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: top 80% center;
+}
+
+section.prod_desc {
+    margin: 0;
+    padding: 2rem 0;
+    h2 {
+        padding: 1rem 0;
+        font-size: 4rem;
+        @media only screen and (max-width: 1024px) {
+            font-size: 3rem;
+        }
+        &.card-title {
+            color: $green;
+        }
+    }
+    h3 {
+        font-size: 2.5rem;
+        color: $them_color;
+    }
+    p {
+        margin: 0;
+        padding: 1rem 0;
+        font-size: 2rem;
+        line-height: 50px;
+    }
+}
+
+section.prod_categories {
+    margin: 0;
+    padding: 2rem 0;
+    h2 {
+        position: relative;
+        display: block;
+        padding: 1rem 0;
+        font-size: 4rem;
+        &.card-title {
+            color: $green;
+        }
+    }
+    h5 {
+        color: $them_color;
+    }
+}
+
+section.explore_prod {
+    margin: 0;
+    padding: 2rem 0;
+    h2 {
+        padding: 1rem 0;
+        font-size: 4rem;
+        @media only screen and (max-width: 1024px) {
+            font-size: 3rem;
+        }
+        &.card-title {
+            color: $green;
+        }
+    }
+    h3 {
+        font-size: 2.5rem;
+        color: $them_color;
+    }
+    .card {
+        img {
+            width: 250px; // how much you want
+            min-height: 100px;
+        }
+        a {
+            color: $logo_color;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+    p {
+        color: $them_color;
+        margin: 0;
+        padding: 1rem 0;
+        font-size: 1rem;
+        line-height: 35px;
+    }
+}
+
+footer {
+    margin: 0;
+    padding: 2rem 0;
+    h4 {
+        color: $them_color;
+    }
+    .block {
+        .custom-search {
+            position: relative;
+        }
+        .custom-search-input {
+            width: 100%;
+            padding-right: 100px !important;
+            box-sizing: border-box;
+        }
+        .custom-search-botton {
+            position: absolute;
+            right: 3px;
+            top: 3px;
+            bottom: 3px;
+            line-height: 1 !important;
+            z-index: 4;
+        }
+        span {
+            display: block;
+            line-height: 25px;
+        }
+        color: $grey;
+        font-weight: 600;
+    }
+}
+
+// Media Queries
