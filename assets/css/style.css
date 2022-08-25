@@ -2,6 +2,16 @@
     Theme: Custom CSS from Scratch
     Atuhor: StayNcloud
 */
+*::-webkit-scrollbar-thumb {
+  background: #607d8b;
+}
+
+*::-webkit-scrollbar {
+  background: #fff;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
 body {
   background: rgb(239, 239, 239);
 }

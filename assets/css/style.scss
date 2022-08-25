@@ -7,6 +7,16 @@ $them_color: #005e72;
 $logo_color: #c28c00;
 $green: #488f00;
 $grey: #607d8b;
+*::-webkit-scrollbar-thumb {
+    background: $grey;
+}
+
+*::-webkit-scrollbar {
+    background: #fff;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
 body {
     background: rgb(239, 239, 239);
 }
