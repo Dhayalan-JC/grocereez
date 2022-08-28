@@ -17,10 +17,9 @@ $grey: #607d8b;
     height: 0.8rem;
 }
 
-body {
-    background: rgb(239, 239, 239);
-}
-
+// body {
+//     background: rgb(239, 239, 239);
+// }
 img {
     width: 100%;
     max-width: 100%;
@@ -45,7 +44,7 @@ header {
                 li.nav-item {
                     padding: 0 2rem;
                     a {
-                        font-size: 2.6rem;
+                        font-size: 2rem;
                         color: $them_color;
                     }
                 }
@@ -61,17 +60,45 @@ section.top-section {
     background-position: top 80% center;
 }
 
+section.abt-top-section {
+    background: url("../images/abt_bg.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: top 80% center;
+}
+
 section.prod_desc {
     margin: 0;
     padding: 2rem 0;
+    position: relative;
     h2 {
         padding: 1rem 0;
-        font-size: 4rem;
+        font-size: 2.5rem;
         @media only screen and (max-width: 1024px) {
-            font-size: 3rem;
+            font-size: 2rem;
         }
         &.card-title {
             color: $green;
+        }
+        &.card-title {
+            position: relative;
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                // left: -10%;
+                top: 25%;
+                background: url(../images/moti.png) no-repeat;
+                background-size: contain;
+                width: 3vw;
+                height: 10vh;
+            }
+            &:before {
+                left: -10%;
+            }
+            &:after {
+                right: -10%;
+            }
         }
     }
     h3 {
@@ -81,8 +108,7 @@ section.prod_desc {
     p {
         margin: 0;
         padding: 1rem 0;
-        font-size: 2rem;
-        line-height: 50px;
+        font-size: 1.6rem;
     }
 }
 
@@ -93,9 +119,32 @@ section.prod_categories {
         position: relative;
         display: block;
         padding: 1rem 0;
-        font-size: 4rem;
+        font-size: 2.5rem;
+        @media only screen and (max-width: 1024px) {
+            font-size: 2rem;
+        }
         &.card-title {
             color: $green;
+        }
+        &.card-title {
+            position: relative;
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                // left: -10%;
+                top: 18%;
+                background: url(../images/moti.png) no-repeat;
+                background-size: contain;
+                width: 3vw;
+                height: 10vh;
+            }
+            &:before {
+                left: -18%;
+            }
+            &:after {
+                right: -18%;
+            }
         }
     }
     h5 {
@@ -108,12 +157,32 @@ section.explore_prod {
     padding: 2rem 0;
     h2 {
         padding: 1rem 0;
-        font-size: 4rem;
+        font-size: 2.5rem;
         @media only screen and (max-width: 1024px) {
-            font-size: 3rem;
+            font-size: 2rem;
         }
         &.card-title {
             color: $green;
+        }
+        &.card-title {
+            position: relative;
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                // left: -10%;
+                top: 18%;
+                background: url(../images/moti.png) no-repeat;
+                background-size: contain;
+                width: 3vw;
+                height: 10vh;
+            }
+            &:before {
+                left: -18%;
+            }
+            &:after {
+                right: -18%;
+            }
         }
     }
     h3 {
@@ -140,7 +209,168 @@ section.explore_prod {
     }
 }
 
+section.abt_cust_service {
+    margin: 0;
+    padding: 2rem 0;
+    position: relative;
+    h2 {
+        padding: 1rem 0;
+        font-size: 2.5rem;
+        @media only screen and (max-width: 1024px) {
+            font-size: 2rem;
+        }
+        &.card-title {
+            color: $them_color;
+        }
+        &.card-title {
+            position: relative;
+            &:before,
+            &:after {
+                // content: "";
+                position: absolute;
+                // left: -10%;
+                top: 18%;
+                background: url(../images/moti.png) no-repeat;
+                background-size: contain;
+                width: 3vw;
+                height: 10vh;
+            }
+            &:before {
+                left: -18%;
+            }
+            &:after {
+                right: -18%;
+            }
+        }
+    }
+    p {
+        color: #000;
+        margin: 0;
+        padding: 1.4rem 0;
+        font-size: 1.6rem;
+        z-index: 50;
+    }
+    .cust_desc {
+        position: relative;
+        .card {
+            position: relative;
+            &:before {
+                z-index: 49;
+                content: "";
+                left: 0;
+                top: 0;
+                width: calc(100vw - 30vw);
+                height: 100%;
+                background-color: #eaebeb;
+                content: "";
+                position: absolute;
+                transform: translateX(-20%);
+            }
+        }
+    }
+}
+
+section.abt_prod_desc {
+    margin: 0;
+    padding: 2rem 0;
+    position: relative;
+    h2 {
+        padding: 1rem 0;
+        font-size: 2.5rem;
+        @media only screen and (max-width: 1024px) {
+            font-size: 2rem;
+        }
+        &.card-title {
+            color: $green;
+        }
+        &.card-title {
+            position: relative;
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                // left: -10%;
+                top: 25%;
+                background: url(../images/moti.png) no-repeat;
+                background-size: contain;
+                width: 3vw;
+                height: 10vh;
+            }
+            &:before {
+                left: -10%;
+            }
+            &:after {
+                right: -10%;
+            }
+        }
+    }
+    h3 {
+        font-size: 2.5rem;
+        color: $them_color;
+    }
+    p {
+        margin: 0;
+        padding: 1rem 0;
+        font-size: 1.6rem;
+    }
+}
+
+section.contact_us {
+    margin: 0;
+    padding: 2rem 0;
+    position: relative;
+    h2 {
+        padding: 1rem 0;
+        font-size: 2.5rem;
+        @media only screen and (max-width: 1024px) {
+            font-size: 2rem;
+        }
+        &.card-title {
+            color: $green;
+        }
+        &.card-title {
+            position: relative;
+            &:before,
+            &:after {
+                // content: "";
+                position: absolute;
+                // left: -10%;
+                top: 25%;
+                background: url(../images/moti.png) no-repeat;
+                background-size: contain;
+                width: 3vw;
+                height: 10vh;
+            }
+            &:before {
+                left: -10%;
+            }
+            &:after {
+                right: -10%;
+            }
+        }
+    }
+    h3 {
+        font-size: 2.5rem;
+        color: $them_color;
+    }
+    p {
+        margin: 0;
+        padding: 0.5rem 0;
+        font-size: 1.6rem;
+    }
+    .form-control {
+        height: calc(2.5em + 1rem + 2px);
+    }
+    textarea.form-control {
+        height: calc(3em + 5rem + 2px);
+    }
+    button.form-control {
+        background-color: #005e72;
+    }
+}
+
 footer {
+    background: rgb(239, 239, 239);
     margin: 0;
     padding: 2rem 0;
     h4 {

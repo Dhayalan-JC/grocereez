@@ -12,10 +12,6 @@
   height: 0.8rem;
 }
 
-body {
-  background: rgb(239, 239, 239);
-}
-
 img {
   width: 100%;
   max-width: 100%;
@@ -39,7 +35,7 @@ header .navbar .navbar-collapse ul.navbar-nav li.nav-item {
   padding: 0 2rem;
 }
 header .navbar .navbar-collapse ul.navbar-nav li.nav-item a {
-  font-size: 2.6rem;
+  font-size: 2rem;
   color: #005e72;
 }
 
@@ -50,21 +46,47 @@ section.top-section {
   background-position: top 80% center;
 }
 
+section.abt-top-section {
+  background: url("../images/abt_bg.png") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: top 80% center;
+}
+
 section.prod_desc {
   margin: 0;
   padding: 2rem 0;
+  position: relative;
 }
 section.prod_desc h2 {
   padding: 1rem 0;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 @media only screen and (max-width: 1024px) {
   section.prod_desc h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 section.prod_desc h2.card-title {
   color: #488f00;
+}
+section.prod_desc h2.card-title {
+  position: relative;
+}
+section.prod_desc h2.card-title:before, section.prod_desc h2.card-title:after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  background: url(../images/moti.png) no-repeat;
+  background-size: contain;
+  width: 3vw;
+  height: 10vh;
+}
+section.prod_desc h2.card-title:before {
+  left: -10%;
+}
+section.prod_desc h2.card-title:after {
+  right: -10%;
 }
 section.prod_desc h3 {
   font-size: 2.5rem;
@@ -73,8 +95,7 @@ section.prod_desc h3 {
 section.prod_desc p {
   margin: 0;
   padding: 1rem 0;
-  font-size: 2rem;
-  line-height: 50px;
+  font-size: 1.6rem;
 }
 
 section.prod_categories {
@@ -85,10 +106,33 @@ section.prod_categories h2 {
   position: relative;
   display: block;
   padding: 1rem 0;
-  font-size: 4rem;
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 1024px) {
+  section.prod_categories h2 {
+    font-size: 2rem;
+  }
 }
 section.prod_categories h2.card-title {
   color: #488f00;
+}
+section.prod_categories h2.card-title {
+  position: relative;
+}
+section.prod_categories h2.card-title:before, section.prod_categories h2.card-title:after {
+  content: "";
+  position: absolute;
+  top: 18%;
+  background: url(../images/moti.png) no-repeat;
+  background-size: contain;
+  width: 3vw;
+  height: 10vh;
+}
+section.prod_categories h2.card-title:before {
+  left: -18%;
+}
+section.prod_categories h2.card-title:after {
+  right: -18%;
 }
 section.prod_categories h5 {
   color: #005e72;
@@ -100,15 +144,33 @@ section.explore_prod {
 }
 section.explore_prod h2 {
   padding: 1rem 0;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 @media only screen and (max-width: 1024px) {
   section.explore_prod h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 section.explore_prod h2.card-title {
   color: #488f00;
+}
+section.explore_prod h2.card-title {
+  position: relative;
+}
+section.explore_prod h2.card-title:before, section.explore_prod h2.card-title:after {
+  content: "";
+  position: absolute;
+  top: 18%;
+  background: url(../images/moti.png) no-repeat;
+  background-size: contain;
+  width: 3vw;
+  height: 10vh;
+}
+section.explore_prod h2.card-title:before {
+  left: -18%;
+}
+section.explore_prod h2.card-title:after {
+  right: -18%;
 }
 section.explore_prod h3 {
   font-size: 2.5rem;
@@ -131,7 +193,166 @@ section.explore_prod p {
   line-height: 35px;
 }
 
+section.abt_cust_service {
+  margin: 0;
+  padding: 2rem 0;
+  position: relative;
+}
+section.abt_cust_service h2 {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 1024px) {
+  section.abt_cust_service h2 {
+    font-size: 2rem;
+  }
+}
+section.abt_cust_service h2.card-title {
+  color: #005e72;
+}
+section.abt_cust_service h2.card-title {
+  position: relative;
+}
+section.abt_cust_service h2.card-title:before, section.abt_cust_service h2.card-title:after {
+  position: absolute;
+  top: 18%;
+  background: url(../images/moti.png) no-repeat;
+  background-size: contain;
+  width: 3vw;
+  height: 10vh;
+}
+section.abt_cust_service h2.card-title:before {
+  left: -18%;
+}
+section.abt_cust_service h2.card-title:after {
+  right: -18%;
+}
+section.abt_cust_service p {
+  color: #000;
+  margin: 0;
+  padding: 1.4rem 0;
+  font-size: 1.6rem;
+  z-index: 50;
+}
+section.abt_cust_service .cust_desc {
+  position: relative;
+}
+section.abt_cust_service .cust_desc .card {
+  position: relative;
+}
+section.abt_cust_service .cust_desc .card:before {
+  z-index: 49;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 70vw;
+  height: 100%;
+  background-color: #eaebeb;
+  content: "";
+  position: absolute;
+  transform: translateX(-20%);
+}
+
+section.abt_prod_desc {
+  margin: 0;
+  padding: 2rem 0;
+  position: relative;
+}
+section.abt_prod_desc h2 {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 1024px) {
+  section.abt_prod_desc h2 {
+    font-size: 2rem;
+  }
+}
+section.abt_prod_desc h2.card-title {
+  color: #488f00;
+}
+section.abt_prod_desc h2.card-title {
+  position: relative;
+}
+section.abt_prod_desc h2.card-title:before, section.abt_prod_desc h2.card-title:after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  background: url(../images/moti.png) no-repeat;
+  background-size: contain;
+  width: 3vw;
+  height: 10vh;
+}
+section.abt_prod_desc h2.card-title:before {
+  left: -10%;
+}
+section.abt_prod_desc h2.card-title:after {
+  right: -10%;
+}
+section.abt_prod_desc h3 {
+  font-size: 2.5rem;
+  color: #005e72;
+}
+section.abt_prod_desc p {
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+}
+
+section.contact_us {
+  margin: 0;
+  padding: 2rem 0;
+  position: relative;
+}
+section.contact_us h2 {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 1024px) {
+  section.contact_us h2 {
+    font-size: 2rem;
+  }
+}
+section.contact_us h2.card-title {
+  color: #488f00;
+}
+section.contact_us h2.card-title {
+  position: relative;
+}
+section.contact_us h2.card-title:before, section.contact_us h2.card-title:after {
+  position: absolute;
+  top: 25%;
+  background: url(../images/moti.png) no-repeat;
+  background-size: contain;
+  width: 3vw;
+  height: 10vh;
+}
+section.contact_us h2.card-title:before {
+  left: -10%;
+}
+section.contact_us h2.card-title:after {
+  right: -10%;
+}
+section.contact_us h3 {
+  font-size: 2.5rem;
+  color: #005e72;
+}
+section.contact_us p {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 1.6rem;
+}
+section.contact_us .form-control {
+  height: calc(2.5em + 1rem + 2px);
+}
+section.contact_us textarea.form-control {
+  height: calc(3em + 5rem + 2px);
+}
+section.contact_us button.form-control {
+  background-color: #005e72;
+}
+
 footer {
+  background: rgb(239, 239, 239);
   margin: 0;
   padding: 2rem 0;
 }
